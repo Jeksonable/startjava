@@ -2,7 +2,7 @@ public class Variable {
     
     public static void main(String[] args) {
         byte coreNums = 4;
-        short ramMemory = 8;
+        short ram = 8;
         int bitDepth = 64;
         long batteryCapacity = 48840;
         float freqCpu = 2.6f;
@@ -11,7 +11,7 @@ public class Variable {
         boolean personal = true;
 
         System.out.println(coreNums);
-        System.out.println(ramMemory);
+        System.out.println(ram);
         System.out.println(bitDepth);
         System.out.println(batteryCapacity);
         System.out.println(freqCpu);
