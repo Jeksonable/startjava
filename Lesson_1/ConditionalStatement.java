@@ -1,7 +1,7 @@
 public class ConditionalStatement {
     public static void main(String[] args) {
         int age = 25;
-        boolean male = true;
+        boolean isMale = true;
         double height = 1.8;
         char firstLetter = 'M';
 
@@ -9,11 +9,11 @@ public class ConditionalStatement {
             System.out.println("Человек старше 20 лет.");
         }
 
-        if (male) {
+        if (isMale) {
             System.out.println("Человек мужского пола");
         }
 
-        if (!male) {
+        if (!isMale) {
             System.out.println("Человек женского пола");
         }
 
