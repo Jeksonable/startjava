@@ -10,14 +10,14 @@ public class Cycle {
             j -= 2;
         }
 
-        int sum = 0;
+        int sumOdd = 0;
         int k = 10;
         do {
             if (k % 2 != 0) {
-                sum += k;
+                sumOdd += k;
             }
             k++;
         } while (k < 21);
-        System.out.println(sum);
+        System.out.println(sumOdd);
     }
 }

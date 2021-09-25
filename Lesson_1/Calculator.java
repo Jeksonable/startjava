@@ -18,7 +18,7 @@ public class Calculator {
                 result = 1;
                 while (secondNum > 0) {
                     result *= firstNum;
-                    secondNum -= 1;
+                    secondNum--;
                 }
             }
         } else if (sign == '%') {
