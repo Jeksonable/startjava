@@ -34,7 +34,7 @@ public class JaegerTest {
         jaeger2.compareArmor(jaeger1.getArmor());
         jaeger1.destroy();
         jaeger2.destroy();
-        System.out.println("Робот " + jaeger1.getModelName() + " уничтожен? " + jaeger1.getDestroyed());
-        System.out.println("Робот " + jaeger2.getModelName() + " уничтожен? " + jaeger2.getDestroyed());
+        System.out.println("Робот " + jaeger1.getModelName() + " уничтожен? " + jaeger1.isDestroyed());
+        System.out.println("Робот " + jaeger2.getModelName() + " уничтожен? " + jaeger2.isDestroyed());
     }
 }

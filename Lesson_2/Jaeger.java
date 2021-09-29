@@ -6,7 +6,7 @@ public class Jaeger {
     private float weight;
     private int strength;
     private int armor;
-    private boolean isDestroyed;
+    private boolean destroyed;
 
     public String getModelName() {
         return modelName;
@@ -64,12 +64,12 @@ public class Jaeger {
         this.armor = armor;
     }
 
-    public boolean getDestroyed() {
-        return isDestroyed;
+    public boolean isDestroyed() {
+        return destroyed;
     }
 
-    public void setDestroyed(boolean isDestroyed) {
-        this.isDestroyed = isDestroyed;
+    public void setDestroyed(boolean destroyed) {
+        this.destroyed = destroyed;
     }
 
     public void drift() {
@@ -110,6 +110,6 @@ public class Jaeger {
 
     public void destroy() {
         System.out.println("Кайдзю уничтожил егеря " + modelName + "!");
-        isDestroyed = true;
+        destroyed = true;
     }
 }
