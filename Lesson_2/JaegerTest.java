@@ -1,24 +1,7 @@
 public class JaegerTest {
     public static void main(String[] args) {
-        Jaeger jaeger1 = new Jaeger();
-        jaeger1.setModelName("Gipsy Danger");
-        jaeger1.setMark("Mark-3");
-        jaeger1.setOrigin("USA");
-        jaeger1.setHeight(79.25f);
-        jaeger1.setWeight(1.98f);
-        jaeger1.setStrength(8);
-        jaeger1.setArmor(6);
-        jaeger1.setDestroyed(false);
-
-        Jaeger jaeger2 = new Jaeger();
-        jaeger2.setModelName("Coyote Tango");
-        jaeger2.setMark("Mark-1");
-        jaeger2.setOrigin("Japan");
-        jaeger2.setHeight(85.34f);
-        jaeger2.setWeight(2.312f);
-        jaeger2.setStrength(7);
-        jaeger2.setArmor(4);
-        jaeger2.setDestroyed(false);
+        Jaeger jaeger1 = new Jaeger("Gipsy Danger", "Mark-3", "USA", 79.25f, 1.98f, 8, 6, false);
+        Jaeger jaeger2 = new Jaeger("Coyote Tango", "Mark-1", "Japan", 85.34f, 2.312f, 7, 4, false);
 
         jaeger1.drift();
         jaeger2.drift();
