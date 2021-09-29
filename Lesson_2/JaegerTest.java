@@ -8,7 +8,7 @@ public class JaegerTest {
         jaeger1.setWeight(1.98f);
         jaeger1.setStrength(8);
         jaeger1.setArmor(6);
-        jaeger1.setIsDestroyed(false);
+        jaeger1.setDestroyed(false);
 
         Jaeger jaeger2 = new Jaeger();
         jaeger2.setModelName("Coyote Tango");
@@ -18,7 +18,7 @@ public class JaegerTest {
         jaeger2.setWeight(2.312f);
         jaeger2.setStrength(7);
         jaeger2.setArmor(4);
-        jaeger2.setIsDestroyed(false);
+        jaeger2.setDestroyed(false);
 
         jaeger1.drift();
         jaeger2.drift();
@@ -34,7 +34,7 @@ public class JaegerTest {
         jaeger2.compareArmor(jaeger1.getArmor());
         jaeger1.destroy();
         jaeger2.destroy();
-        System.out.println("Робот " + jaeger1.getModelName() + " уничтожен? " + jaeger1.getIsDestroyed());
-        System.out.println("Робот " + jaeger2.getModelName() + " уничтожен? " + jaeger2.getIsDestroyed());
+        System.out.println("Робот " + jaeger1.getModelName() + " уничтожен? " + jaeger1.getDestroyed());
+        System.out.println("Робот " + jaeger2.getModelName() + " уничтожен? " + jaeger2.getDestroyed());
     }
 }

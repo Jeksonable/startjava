@@ -10,21 +10,17 @@ public class Calculator {
     }
 
     public int calculate() {
-        int result = 0;
         switch (sign) {
             case "+":
-                result = firstNum + secondNum;
-                break;
+                return firstNum + secondNum;
             case "-":
-                result = firstNum - secondNum;
-                break;
+                return firstNum - secondNum;
             case "*":
-                result = firstNum * secondNum;
-                break;
+                return firstNum * secondNum;
             case "/":
-                result = firstNum / secondNum;
-                break;
+                return firstNum / secondNum;
             case "^":
+                int result = 0;
                 if (firstNum != 0) {
                     result = 1;
                     while (secondNum > 0) {
@@ -32,13 +28,12 @@ public class Calculator {
                         secondNum--;
                     }
                 }
-                break;
+                return result;
             case "%":
-                result = firstNum % secondNum;
-                break;
+                return firstNum % secondNum;
             default:
                 System.out.println("Неизвестная математическая операция.");
+                return 0;
         }
-        return result;
     }
 }

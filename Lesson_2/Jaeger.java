@@ -64,11 +64,11 @@ public class Jaeger {
         this.armor = armor;
     }
 
-    public boolean getIsDestroyed() {
+    public boolean getDestroyed() {
         return isDestroyed;
     }
 
-    public void setIsDestroyed(boolean isDestroyed) {
+    public void setDestroyed(boolean isDestroyed) {
         this.isDestroyed = isDestroyed;
     }
 
