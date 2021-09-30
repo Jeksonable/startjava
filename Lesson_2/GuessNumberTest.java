@@ -12,12 +12,12 @@ public class GuessNumberTest {
 
         String answer = "";
         while (!answer.equals("no")) {
-            GuessNumber guessNumber = new GuessNumber(firstPlayer, secondPlayer);
-            guessNumber.play();
+            GuessNumber game = new GuessNumber(firstPlayer, secondPlayer);
+            game.play();
             do {
                 System.out.print("Хотите продолжить игру? [yes/no]: ");
                 answer = scanner.next();
-            } while(!(answer.equals("yes") ^ answer.equals("no")));
+            } while(!answer.equals("yes") && !answer.equals("no"));
         }
     }
 }
