@@ -1,4 +1,4 @@
-package com.startjava.lesson_2_3.calculator;
+package com.startjava.lesson_2_3_4.calculator;
 
 public class Calculator {
     private int firstNum;
@@ -14,23 +14,15 @@ public class Calculator {
     public int calculate() {
         switch (sign) {
             case "+":
-                return firstNum + secondNum;
+                return Math.addExact(firstNum, secondNum);
             case "-":
-                return firstNum - secondNum;
+                return Math.subtractExact(firstNum, secondNum);
             case "*":
-                return firstNum * secondNum;
+                return Math.multiplyExact(firstNum, secondNum);
             case "/":
-                return firstNum / secondNum;
+                return Math.floorDiv(firstNum, secondNum);
             case "^":
-                int result = 0;
-                if (firstNum != 0) {
-                    result = 1;
-                    while (secondNum > 0) {
-                        result *= firstNum;
-                        secondNum--;
-                    }
-                }
-                return result;
+                return (int) Math.pow(firstNum, secondNum);
             case "%":
                 return firstNum % secondNum;
             default:
