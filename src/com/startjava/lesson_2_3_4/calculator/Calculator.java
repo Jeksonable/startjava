@@ -5,10 +5,11 @@ public class Calculator {
     private String sign;
     private int secondNum;
 
-    public Calculator(int firstNum, String sign, int secondNum) {
-        this.firstNum = firstNum;
-        this.sign = sign;
-        this.secondNum = secondNum;
+    public Calculator(String formula) {
+        String[] mathArray = formula.split(" ");
+        firstNum = Integer.parseInt(mathArray[0]);
+        sign = mathArray[1];
+        secondNum = Integer.parseInt(mathArray[2]);
     }
 
     public int calculate() {
