@@ -8,7 +8,7 @@ public class Player {
 
     public Player(String name, int attempts) {
         this.name = name;
-        this.numbers = new int[attempts];
+        numbers = new int[attempts];
     }
 
     public String getName() {
@@ -20,14 +20,14 @@ public class Player {
     }
 
     public void setNumber(int number, int index) {
-        this.numbers[index] = number;
+        numbers[index] = number;
     }
 
-    public int[] getNumbers() {
-        return Arrays.copyOf(numbers, numbers.length);
+    public int[] getNumbers(int attempt) {
+        return Arrays.copyOfRange(numbers, 0, attempt);
     }
 
-    public void setNumbers(int[] numbers) {
-        this.numbers = numbers;
+    public void clearNumbers(int attempt) {
+        Arrays.fill(numbers, 0, attempt, 0);
     }
 }
